@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Demo express api",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./lib/server.ts",        
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsalio/ExpressSeviceDemo.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "jsalio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsalio/ExpressSeviceDemo/issues"
+  },
+  "homepage": "https://github.com/jsalio/ExpressSeviceDemo#readme",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4"
+  }
+}
